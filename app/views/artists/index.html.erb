@@ -1,0 +1,6 @@
+<ol>
+<% @artists.each do |p| %>
+  <li><%= link_to p.name, artist_path(p) %></li>
+  <li><%= p.song_count%> songs</li>
+<% end %>
+</ol>
